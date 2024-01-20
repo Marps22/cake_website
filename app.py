@@ -12,15 +12,6 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-
-# Use Local CSS
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-
-local_css("C:/Users/ASUS/Desktop/style/Stylecodes.txt")
-
 # --- LOAD ASSETS ---
 lottie_coding = load_lottieurl("https://lottie.host/0a93c91a-9514-4eeb-8c15-d4c9c626ae51/PcWSOf1Kjl.json")
 img_contact_form = Image.open("C:/Users/ASUS/Desktop/images/cake_one.jpg")
